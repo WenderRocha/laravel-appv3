@@ -6,7 +6,8 @@
                     Novo Usuário
                 </h2>
 
-                <Button :href="route('users.index')" variant="info" class="items-center gap-2 max-w-xs">
+                <Button :href="route('users.index')" variant="info" class="items-center gap-2 max-w-xs" v-slot="{ iconSizeClasses }">
+                    <ArrowCircleLeftIcon aria-hidden="true" :class="iconSizeClasses" />
                     <span>Voltar</span>
                 </Button>
             </div>
@@ -21,4 +22,5 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/Authenticated.vue'
 import Button from '@/Components/Button.vue'
+import { ArrowCircleLeftIcon } from "@heroicons/vue/outline";
 </script>
