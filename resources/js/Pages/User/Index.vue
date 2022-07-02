@@ -26,9 +26,6 @@
                                 E-mail
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Cadastro
-                            </th>
-                            <th scope="col" class="px-6 py-3">
                                 Status
                             </th>
                             <th scope="col" class="px-6 py-3">
@@ -40,18 +37,15 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <tr v-for="(user, index) in users" v-bind:key="index" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                             <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
-                                Wender Rocha
+                                {{ user.name }}
                             </th>
                             <td class="px-6 py-4">
-                                wender_dev@hotmail.com
+                                {{ user.email }}
                             </td>
                             <td class="px-6 py-4">
-                                02/07/2022
-                            </td>
-                            <td class="px-6 py-4">
-                                Ativo
+                               <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-900">Ativo</span>
                             </td>
                             <td class="px-6 py-4">
                                 Administrador
@@ -83,8 +77,23 @@
     </AuthenticatedLayout>
 </template>
 
-<script setup>
+<script>
 import AuthenticatedLayout from '@/Layouts/Authenticated.vue'
 import Button from '@/Components/Button.vue'
 import { PlusCircleIcon, PencilIcon } from "@heroicons/vue/outline";
+
+
+export default{
+
+    name: "Index",
+    components: {
+        AuthenticatedLayout,
+        Button,
+        PlusCircleIcon,
+        PencilIcon
+    },
+    props: {
+        users: Object
+    }
+}
 </script>

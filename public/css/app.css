@@ -1262,6 +1262,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
+.bg-green-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+}
 .fill-current {
   fill: currentColor;
 }
@@ -1334,6 +1338,14 @@ select {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .pt-8 {
   padding-top: 2rem;
@@ -1467,6 +1479,10 @@ select {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+.text-green-800 {
+  --tw-text-opacity: 1;
+  color: rgb(22 101 52 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;
@@ -1849,6 +1865,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
+.dark .dark\:bg-green-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+}
 .dark .dark\:text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -1880,6 +1900,10 @@ select {
 .dark .dark\:text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+.dark .dark\:text-green-900 {
+  --tw-text-opacity: 1;
+  color: rgb(20 83 45 / var(--tw-text-opacity));
 }
 .dark .dark\:before\:border-l-gray-600::before {
   content: var(--tw-content);
