@@ -6,7 +6,7 @@
                     Dashboard
                 </h2>
 
-                <Button external variant="black" target="_blank" class="items-center gap-2 max-w-xs" v-slot="{ iconSizeClasses }" href="https://github.com/kamona-wd/kui-laravel-breeze">
+                <Button external variant="info" target="_blank" class="items-center gap-2 max-w-xs" v-slot="{ iconSizeClasses }" href="https://github.com/kamona-wd/kui-laravel-breeze">
                     <GithubIcon aria-hidden="true" :class="iconSizeClasses" />
                     <span>Star on Github</span>
                 </Button>

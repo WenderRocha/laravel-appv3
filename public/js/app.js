@@ -25605,7 +25605,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     header: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Button"], {
         external: "",
-        variant: "black",
+        variant: "info",
         target: "_blank",
         "class": "items-center gap-2 max-w-xs",
         href: "https://github.com/kamona-wd/kui-laravel-breeze"
@@ -25785,11 +25785,21 @@ var TwitterIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AnalysisIcon": () => (/* binding */ AnalysisIcon),
 /* harmony export */   "ArrowsInnerIcon": () => (/* binding */ ArrowsInnerIcon),
+/* harmony export */   "BookIcon": () => (/* binding */ BookIcon),
+/* harmony export */   "ChartPieIcon": () => (/* binding */ ChartPieIcon),
+/* harmony export */   "CogIcon": () => (/* binding */ CogIcon),
 /* harmony export */   "DashboardIcon": () => (/* binding */ DashboardIcon),
 /* harmony export */   "EmptyCircleIcon": () => (/* binding */ EmptyCircleIcon),
 /* harmony export */   "MenuFoldLineLeftIcon": () => (/* binding */ MenuFoldLineLeftIcon),
-/* harmony export */   "MenuFoldLineRightIcon": () => (/* binding */ MenuFoldLineRightIcon)
+/* harmony export */   "MenuFoldLineRightIcon": () => (/* binding */ MenuFoldLineRightIcon),
+/* harmony export */   "PlusIcon": () => (/* binding */ PlusIcon),
+/* harmony export */   "SecureIcon": () => (/* binding */ SecureIcon),
+/* harmony export */   "SupportIcon": () => (/* binding */ SupportIcon),
+/* harmony export */   "TradesIcon": () => (/* binding */ TradesIcon),
+/* harmony export */   "TransactionIcon": () => (/* binding */ TransactionIcon),
+/* harmony export */   "WalletsIcon": () => (/* binding */ WalletsIcon)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
@@ -25888,6 +25898,204 @@ var EmptyCircleIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
         "stroke-width": "2",
         "stroke-linecap": "round",
         "stroke-linejoin": "round"
+      }, null)]);
+    };
+  }
+});
+var SecureIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "SecureIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+      }, null)]);
+    };
+  }
+});
+var CogIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "CogIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+      }, null), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+      }, null)]);
+    };
+  }
+});
+var WalletsIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "WalletsIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+      }, null)]);
+    };
+  }
+});
+var TransactionIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "TransactionIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+      }, null)]);
+    };
+  }
+});
+var TradesIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "TradesIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+      }, null)]);
+    };
+  }
+});
+var BookIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "BookIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+      }, null)]);
+    };
+  }
+});
+var SupportIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "SupportIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+      }, null)]);
+    };
+  }
+});
+var AnalysisIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "AnalysisIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"
+      }, null)]);
+    };
+  }
+});
+var PlusIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "PlusIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M12 4v16m8-8H4"
+      }, null)]);
+    };
+  }
+});
+var ChartPieIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: "ChartPieIcon",
+  setup: function setup() {
+    return function () {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+        "xmlns": "http://www.w3.org/2000/svg",
+        "class": "h-6 w-6",
+        "fill": "none",
+        "viewBox": "0 0 24 24",
+        "stroke": "currentColor",
+        "stroke-width": "2"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
+      }, null), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
       }, null)]);
     };
   }
