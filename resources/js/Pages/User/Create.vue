@@ -26,10 +26,14 @@
                     <span v-if="errors.email" class="mt-2 text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oops!</span>{{ errors.email }}</span>
                 </div>
                 <div class="relative z-0 w-full mb-6 group">
-                    <input :class="errors.password ? 'border border-red-500' : ''" type="password" name="password" v-model="user.password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" "  autocomplete="off" />
-                    <label :class="errors.password ? 'text-red-700' : ''" for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+                    <input :class="errors.password ? 'border border-red-500' : ''" type="password" name="password" v-model="user.password" id="password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" "  autocomplete="off" />
+                    <label :class="errors.password ? 'text-red-700' : ''" for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Senha</label>
                     <span v-if="errors.password" class="mt-2 text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oops!</span>{{ errors.password }}</span>
-
+                </div>
+                <div class="relative z-0 w-full mb-6 group mt-5">
+                    <input :class="errors.password_confirmation ? 'border border-red-500' : ''" type="password" name="password_confirmation" v-model="user.password_confirmation" id="password_confirmation" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" "  autocomplete="off" />
+                    <label :class="errors.password_confirmation ? 'text-red-700' : ''" for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirmar senha</label>
+                    <span v-if="errors.password_confirmation" class="mt-2 text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oops!</span>{{ errors.password_confirmation }}</span>
                 </div>
                 <div class="relative z-0 w-full mb-6 group">
                     <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Nivel de permissão</label>
@@ -52,7 +56,7 @@ import Button from '@/Components/Button.vue'
 import { ArrowCircleLeftIcon } from "@heroicons/vue/outline";
 import { Inertia } from '@inertiajs/inertia'
 import Swal from 'sweetalert2'
-import { height } from 'tailwindcss/defaultTheme';
+import { InertiaProgress } from '@inertiajs/progress'
 
 export default {
 
@@ -65,7 +69,8 @@ export default {
         Button,
         ArrowCircleLeftIcon,
         Inertia,
-        Swal
+        Swal,
+        InertiaProgress
     },
 
     data() {
@@ -75,6 +80,7 @@ export default {
                 name: '',
                 email: '',
                 password: '',
+                password_confirmation: ''
             }
            
         }
@@ -91,9 +97,9 @@ export default {
                     Swal.fire({
                         position: 'center',
                         icon: 'success',
-                        title: '<span class="text-lg text-gray-500">Cadastrado realizado com sucesso!<span>',
+                        title: '<span class="text-lg text-gray-700">Cadastrado realizado com sucesso!<span>',
                         showConfirmButton: false,
-                        timer: 1900,
+                        timer: 2000,
                         heightAuto: false,
                     })
                 },

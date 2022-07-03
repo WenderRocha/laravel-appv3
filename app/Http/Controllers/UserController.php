@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreUserFormRequest;
 use App\Models\User;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
@@ -39,14 +40,8 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreUserFormRequest $request)
     {
-
-        $request->validate([
-            'name' => ['required'],
-            'email' => ['required'],
-            'password' => ['required']
-        ]);
 
         User::create([
             'name' => $request->name,
