@@ -19,11 +19,13 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/users', [UserController::class, 'index'])->middleware(['auth', 'verified'])->name('users.index');
+Route::get('users/create', [UserController::class, 'create'])->middleware(['auth', 'verified'])->name('users.create');
+Route::post('/users/store', [UserController::class, 'store'])->middleware(['auth', 'verified'])->name('users.store');
+
 Route::get('/users/{id}', [UserController::class, 'show'])->middleware(['auth', 'verified'])->name('users.show');
 
-Route::get('/users/create', function () {
-    return Inertia::render('User/Create');
-})->middleware(['auth', 'verified'])->name('users.create');
+
+
 
 
 
