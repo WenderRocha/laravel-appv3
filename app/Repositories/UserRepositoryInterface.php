@@ -12,4 +12,5 @@ interface UserRepositoryInterface
     public function get(int $id);
     public function update(Array $data, $id);
     public function destroy(int $id);
+    public function paginate(int $qtd = 15);
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Inertia\Inertia;
 use App\Services\UserService;
 use App\Http\Requests\StoreUserFormRequest;
@@ -16,8 +17,8 @@ class UserController extends Controller
 
     public function index()
     {
-        $users = ['users' => $this->service->getAll()];
-        return Inertia::render('User/Index', $users);
+        $users = $this->service->paginate(10);
+        return Inertia::render('User/Index', ['users' => $users]);
     }
 
     public function create()

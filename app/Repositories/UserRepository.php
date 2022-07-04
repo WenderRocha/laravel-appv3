@@ -34,4 +34,9 @@ class UserRepository implements UserRepositoryInterface
     {
         return $this->model->find($id)->delete();
     }
+
+    public function paginate(int $qtd = 15)
+    {
+        return $this->model->paginate($qtd);
+    }
 }

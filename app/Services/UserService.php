@@ -58,4 +58,9 @@ class UserService
 
         return $this->repository->destroy($id);
     }
+
+    public function paginate(int $qtd = 15)
+    {
+        return $this->repository->paginate($qtd);
+    }
 }

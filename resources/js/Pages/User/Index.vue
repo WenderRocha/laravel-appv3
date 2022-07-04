@@ -37,7 +37,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="(user, index) in users" v-bind:key="index" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <tr v-for="user in users.data" :key="user.id" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                             <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
                                 {{ user.name }}
                             </th>
@@ -70,7 +70,10 @@
                             </td>
                         </tr>
                     </tbody>
+                    
                 </table>
+
+                <Pagination :data="users"/>
             </div>
 
         </div>
@@ -82,6 +85,7 @@ import AuthenticatedLayout from '@/Layouts/Authenticated.vue'
 import Button from '@/Components/Button.vue'
 import { PlusCircleIcon, PencilIcon } from "@heroicons/vue/outline";
 import { Link } from '@inertiajs/inertia-vue3'
+import Pagination from '../Shared/Pagination'
 
 
 export default{
@@ -92,7 +96,8 @@ export default{
         Button,
         PlusCircleIcon,
         PencilIcon,
-        Link
+        Link,
+        Pagination
     },
     props: {
         users: Object
