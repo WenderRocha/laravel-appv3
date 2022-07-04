@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use Inertia\Inertia;
 use App\Services\UserService;
 use App\Http\Requests\StoreUserFormRequest;
