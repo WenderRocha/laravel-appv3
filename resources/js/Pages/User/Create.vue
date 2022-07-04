@@ -8,7 +8,7 @@
 
                 <Button :href="route('users.index')" variant="info" class="items-center gap-2 max-w-xs" v-slot="{ iconSizeClasses }">
                     <ArrowCircleLeftIcon aria-hidden="true" :class="iconSizeClasses" />
-                    <span>Voltar</span>
+                    <span>Ver todos usuários</span>
                 </Button>
             </div>
         </template>
@@ -89,7 +89,7 @@ export default {
     methods: {
         submit() {
 
-            Inertia.post('/users/store', this.user, {
+            Inertia.post('/users', this.user, {
                 onBefore: (visit) => {},
                 onStart: (visit) => {},
                 onProgress: (progress) => {},
@@ -97,9 +97,9 @@ export default {
                     Swal.fire({
                         position: 'center',
                         icon: 'success',
-                        title: '<span class="text-lg text-gray-700">Cadastrado realizado com sucesso!<span>',
+                        title: '<span class="text-lg text-green-700">Cadastrado realizado com sucesso!<span>',
                         showConfirmButton: false,
-                        timer: 2000,
+                        timer: 2050,
                         heightAuto: false,
                     })
                 },
